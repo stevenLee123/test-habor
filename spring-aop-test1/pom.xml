@@ -9,24 +9,30 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.steven</groupId>
-    <artifactId>test-habor</artifactId>
+    <artifactId>spring-aop-tess1</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>test-habor</name>
-    <packaging>pom</packaging>
+    <name>spring-aop-tess1</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
         <java.version>1.8</java.version>
         <maven.test.skip>true</maven.test.skip>
     </properties>
-    <modules>
-        <module>spring-boot-test1</module>
-    </modules>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
 
         <dependency>
