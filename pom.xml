@@ -21,6 +21,7 @@
     </properties>
     <modules>
         <module>spring-boot-test1</module>
+        <module>spring-aop-test1</module>
     </modules>
 
     <dependencies>

@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.steven</groupId>
-    <artifactId>spring-aop-tess1</artifactId>
+    <artifactId>spring-aop-test1</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-aop-tess1</name>
+    <name>spring-aop-test1</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
