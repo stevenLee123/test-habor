@@ -3,9 +3,10 @@ package com.steven.springaoptess1;
 import com.steven.springaoptess1.aop2.AspectTest;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 
-@SpringBootApplication
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 public class SpringAopTess1Application {
 
     @Bean

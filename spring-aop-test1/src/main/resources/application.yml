@@ -1,0 +1,15 @@
+#spring.datasource.url=jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8
+#spring.datasource.driverClassName=com.mysql.jdbc.Driver
+#spring.datasource.username=root
+#spring.datasource.password=steven
+
+spring:
+  datasource:
+    hikari:
+#      url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8
+      driver-class-name: com.mysql.jdbc.Driver
+      username: root
+      password: steven
+      jdbc-url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8
+
+
