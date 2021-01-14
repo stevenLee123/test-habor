@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>websocket</title>
+</head>
+<body>
+    <br/>
+    <div>
+        <input id="message" type="text">
+        <button onclick="sendMessage()">发送消息</button>
+         <button onclick="closeSocket()">关闭连接</button>
+
+    </div>
+</body>
+
+<script>
+    var websocket = null ;
+    if ("WebSocket" in window) {
+        websocket = new WebSocket("ws://localhost:8888/ws");
+    } else {
+        alert(" Not support websocket ");
+    }
+    websocket.onerror = function() {
+        appendMessage("error" );
+    }
+    websocket.onopeen  = function(event) {
+        appendMessage("open");
+    }
+    websocket.onmessage = function (event) {
+        appendMessage(event.data);
+    }
+    websocket.onclose = function () {
+        appendMessage("close");
+    }
+
+    function closeSocket(){
+        websocket.close();
+    }
+
+    function sendMessage(){
+        websocket.send("send a message.....");
+    }
+
+    function appendMessage(message){
+        console.log(message);
+    }
+    window.onbeforeunload = function () {
+        closeSocket();
+    }
+
+</script>
+</html>

@@ -1,2 +1,8 @@
 server:
   port: 8888
+
+spring:
+  security:
+    user:
+      name: supconit
+      password: supconit

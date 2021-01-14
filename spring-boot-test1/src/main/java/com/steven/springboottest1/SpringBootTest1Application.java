@@ -7,14 +7,17 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+//import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 
 //@EnableAutoConfiguration
 //@ComponentScan
 //@SpringBootConfiguration
+//@EnableWebSecurity
+@SpringBootApplication
 public class SpringBootTest1Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(TestController1.class, args);
+        SpringApplication.run(SpringBootTest1Application.class, args);
     }
 
 

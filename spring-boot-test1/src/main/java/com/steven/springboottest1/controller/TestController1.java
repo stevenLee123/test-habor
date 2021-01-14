@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(value = "/api/v1")
-@EnableAutoConfiguration
+//@EnableAutoConfiguration
 public class TestController1 {
 
     @GetMapping("/hello")
