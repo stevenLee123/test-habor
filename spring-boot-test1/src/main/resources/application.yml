@@ -6,3 +6,12 @@ spring:
     user:
       name: supconit
       password: supconit
+  devtools:
+    livereload:
+      enabled: true
+      port: 6523
+    restart:
+      additional-exclude:
+      additional-paths:
+      enabled: true
+
