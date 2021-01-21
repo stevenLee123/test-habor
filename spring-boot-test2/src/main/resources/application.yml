@@ -1,2 +1,6 @@
 server:
   port: 8000
+
+test-properties:
+  name: steven
+  age: 30
