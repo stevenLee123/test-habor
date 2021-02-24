@@ -14,6 +14,7 @@ import org.springframework.context.annotation.ComponentScan;
 //@SpringBootConfiguration
 //@EnableWebSecurity
 @SpringBootApplication
+//@EnableAutoConfiguration
 public class SpringBootTest1Application {
 
     public static void main(String[] args) {

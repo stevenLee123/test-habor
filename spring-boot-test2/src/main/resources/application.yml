@@ -4,3 +4,21 @@ server:
 test-properties:
   name: steven
   age: 30
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 0
+      location:
+      max-file-size: 5243880
+      max-request-size: 50000000
+      resolve-lazily: false
+
+management:
+  endpoint:
+    shutdown:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"

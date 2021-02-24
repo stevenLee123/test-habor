@@ -1,9 +1,13 @@
 spring:
   redis:
     host: 10.10.15.146
-    database: 0
+    database: 1
     port: 6379
     password:
   cache:
-    type: simple
+    type: redis
+    redis:
+      #消除前缀
+      use-key-prefix: false
+      time-to-live: 30000
 #  mvc
